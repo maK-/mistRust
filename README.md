@@ -8,7 +8,7 @@ Make sure toolchains installed (with rustup target add [chain])
 
 ## Building Binary
 
-For linux
+For linux (assuming you are using it)
 
 `cargo build`
 
