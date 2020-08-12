@@ -10,6 +10,7 @@ use winapi::um::synchapi;
 use winapi::um::winbase;
 use winapi::um::winnt;
 
+//Execute shellcode in Windows
 pub fn run(shellcode: Vec<u8>) -> Result<(), u32>{
     let mut mm = MappedMemory::new(shellcode.len())?;
     let mms = mm.as_slice_mut();
